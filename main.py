@@ -2,14 +2,14 @@ import requests
 
 
 def get_terminal_weather(location):
-    url_template = 'https://wttr.in{}'
+    url_template = 'https://wttr.in'
     payload = {'lang': 'ru',
                'M': '',
                'n': '',
                'q': '',
                'T': ''}
 
-    url = url_template.format('/' + location)
+    url = f'{url_template}/{location}'
 
     response = requests.get(url, params=payload)
     response.raise_for_status()
