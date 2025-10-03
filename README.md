@@ -14,14 +14,14 @@
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -U pip
-python -m pip install requests
+python -m pip install requests==2.*
 ```
 ### Windows (PowerShell)
 ```powershell
 py -3 -m venv .venv
 .venv\Scripts\Activate.ps1
 python -m pip install -U pip
-python -m pip install requests
+python -m pip install requests==2.*
 ```
 ## Запуск
 ```
